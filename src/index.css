@@ -1,13 +1,145 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #7c7c7c; /* Alterando a cor de fundo */
+}
+/* Paleta de Cores */
+:root {
+  --cor-primaria: #00000091; /* Vinho Escuro */
+  --cor-secundaria: #3f3f3f; /* Vermelho Marrom */
+  --cor-terciaria: #f5f5f5; /* Cinza Claro */
+  --cor-quaternaria: #ffffff; /* Bege Claro */
+  --cor-quintaria: #ffffff; /* Branco */
+}
+/* Estilos para o formulário */
+form {
+  max-width: 400px;
+  margin: 0 auto; 
+  background-color: var(--cor-secundaria);
+  padding: .9em;
+  box-shadow: 2px 2px 8px black;
+  border-radius: 2px;
+}
+/* Estilos para os campos de entrada */
+input {
+  background-color: var(--cor-terciaria); 
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+  border: 1px solid var(--cor-secundaria); 
+  /* border-radius: 8px; */
+  box-sizing: border-box;
+}
+/* Estilos para o botão */
+button {
+  background-color: var(--cor-primaria);
+  color: var(--cor-quintaria);
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  /* border-radius: 8px; */
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  background-color: #ffffff; /* Alterando a cor de fundo ao passar o mouse */
+}
+p {
+  color: var(--cor-primaria);
+  font-weight: bold;
+}
+h2 {
+  text-align: center;
+}
+.cadastro-pessoa {
+  padding: 20px;
+}
+.cadastro-pessoa h2 {
+  margin-bottom: 10px;
+}
+.cadastro-pessoa form {
+  margin-bottom: 20px;
+}
+.cadastro-pessoa label {
+  display: block;
+  margin-bottom: 5px;
+}
+.cadastro-pessoa button {
+  padding: 8px 20px;
+  background-color: var(--cor-terciaria);
+  color: var(--cor-quintaria);
+  border: none;
+  cursor: pointer;
+}
+.cadastro-pessoa button:hover {
+  background-color: #ffffff; /* Alterando a cor de fundo ao passar o mouse */
+}
+.cadastro-pessoa li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid var(--cor-quaternaria);
+}
+.cadastro-pessoa li div {
+  display: flex;
+  justify-content: space-between;
+}
+.cadastro-pessoa li div strong {
+  font-weight: bold;
+}
+nav {
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+nav ul li {
+  margin-right: 100px;
+  padding: .2em;
+}
+summary{color: #000000;}
+nav ul li a {
+  color: var(--cor-quintaria);
+  text-decoration: none;
+}
+nav ul li a:hover{
+  color: #ffbb33;
+}
+/* Estilos para o botão de select */
+select {
+  background-color: var(--cor-terciaria);
+  color: var(--cor-primaria);
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+  border: 1px solid var(--cor-secundaria);
+  border-radius: 8px;
+  box-sizing: border-box;
+  appearance: none; /* Remove a seta padrão do select */
+  -webkit-appearance: none; /* Remove a seta padrão no Safari e Chrome */
+  -moz-appearance: none; /* Remove a seta padrão no Firefox */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23031839" d="M2 0L0 2h4L2 0zM2 5L0 3h4L2 5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 12px 12px;
+  cursor: pointer;
+}
+select option {
+  background-color: var(--cor-quintaria);
+  color: var(--cor-primaria);
+}
+/* Estilos adicionais para responsividade */
+@media (max-width: 600px) {
+  form {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  nav ul li {
+    margin-right: 20px;
+  }
 }
