@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { collection, getDocs, updateDoc, doc } from 'firebase/firestore';
 import { db } from '../firebaseConfig.js';
 import Select from 'react-select';
+import Navbar from './Navbar.js'
 
 function EmprestimoLivros() {
   const [livros, setLivros] = useState([]);
@@ -72,6 +73,8 @@ function EmprestimoLivros() {
 
   return (
     <div>
+          <Navbar/>
+
       <h2>Empréstimo de Livro</h2>
       {mensagem && <p>{mensagem}</p>}
       <div>
