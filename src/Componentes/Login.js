@@ -23,7 +23,7 @@ const Login = () => {
   return (
     <div>
     <h1>Trabalho Biblioteca</h1>
-    <h6>Pamela e Kerley</6>
+   
       <h2>Login</h2>
       <form onSubmit={handleLogin}>
         <div>
