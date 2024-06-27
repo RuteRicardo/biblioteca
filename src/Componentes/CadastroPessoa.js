@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../firebaseConfig.js';
+import Navbar from './Navbar.js'
+
 
 function CadastroPessoa() {
   const [nome, setNome] = useState('');
@@ -44,6 +46,8 @@ function CadastroPessoa() {
 
   return (
     <div>
+          <Navbar/>
+
       <h2>Cadastro de Aluno</h2>
       {mensagem && <p>{mensagem}</p>}
       <form onSubmit={handleSubmit}>
