@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { collection, getDocs, updateDoc, doc } from 'firebase/firestore';
 import { db } from '../firebaseConfig.js';
+import Navbar from './Navbar.js'
 
 function DevolucaoLivros() {
   const [livros, setLivros] = useState([]);
@@ -40,6 +41,8 @@ function DevolucaoLivros() {
 
   return (
     <div>
+          <Navbar/>
+
       <h2>Devolução de Livro</h2>
       {mensagem && <p>{mensagem}</p>}
       <h2>Livros Emprestados</h2>
