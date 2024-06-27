@@ -42,7 +42,7 @@ const App = () => {
     <AuthProvider>
       <Router>
         <div>
-          <Navbar />
+         
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/" element={<PrivateRoute element={CadastroPessoa} />} />
